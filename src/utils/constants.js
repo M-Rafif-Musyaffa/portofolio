@@ -58,6 +58,7 @@ export const SKILLS = [
   { name: 'Golang', icon: SiGo },
   { name: 'Kotlin', icon: SiKotlin },
   {name: 'Codeighter', icon:SiCodeigniter },
+  {name: 'Bootstrap', icon:SiBootstrap },
 ]
 export const SKILL_LANG_MAP = {
   'Laravel':      ['blade', 'php', 'laravel'],
@@ -69,6 +70,7 @@ export const SKILL_LANG_MAP = {
   'Unity':        ['c#', 'unity'],
   'Kotlin': ['kotlin'],
   'Codeighter': ['Codeighter'],
+  'Bootstrap': ['Bootstrap'],
 }
 
 export const EXPERIENCES = [
