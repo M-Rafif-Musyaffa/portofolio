@@ -20,6 +20,7 @@ export const LANG_MAP = {
   'CSS':        { icon: SiCss,         color: '#1572B6', bg: 'rgba(21,114,182,0.1)',  border: 'rgba(21,114,182,0.2)'  },
   'Kotlin':      { icon: SiKotlin,       color: '#7F52FF', bg: 'rgba(127,82,255,0.1)', border: 'rgba(127,82,255,0.2)' },
   'CodeIgniter': { icon: SiCodeigniter,  color: '#EF4223', bg: 'rgba(239,66,35,0.1)',  border: 'rgba(239,66,35,0.2)'  },
+  'Bootstrap':  { icon: SiBootstrap,   color: '#7952B3', bg: 'rgba(121,82,179,0.1)',  border: 'rgba(121,82,179,0.2)'  },
 }
 
 export const PERSONAL_INFO = {
