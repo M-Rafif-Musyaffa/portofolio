@@ -144,30 +144,24 @@ function Hero() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 1.5 }}
-        className="absolute bottom-6 right-6 md:bottom-10 md:right-10 z-20"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="absolute bottom-6 right-6 md:bottom-12 md:right-12 z-20"
       >
         <a
           href="https://portfolio-heisenberg.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-[9px] sm:text-[10px] font-mono text-stone-700 hover:text-amber-500 tracking-[0.3em] uppercase transition-all duration-500 group"
+          className="flex items-center gap-3 bg-stone-900/80 backdrop-blur-sm border border-stone-800 hover:border-amber-500/50 px-5 py-2.5 rounded-full text-[10px] md:text-xs font-mono text-stone-300 hover:text-amber-400 tracking-[0.2em] uppercase transition-all duration-300 shadow-lg group hover:scale-105"
         >
-          <span className="opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-2 group-hover:translate-x-0 text-amber-500/50">
-            [
+          {/* Titik Radar (Lampu Berkedip) */}
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
           </span>
           
-          <span className="relative">
-            Classified Access
-            {/* Garis bawah samar yang memanjang saat di-hover */}
-            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-amber-500/50 group-hover:w-full transition-all duration-500"></span>
-          </span>
-
-          <span className="opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-2 group-hover:translate-x-0 text-amber-500/50">
-            ]
-          </span>
+          <span>Classified Access</span>
         </a>
       </motion.div>
 
