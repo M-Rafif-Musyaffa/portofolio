@@ -50,6 +50,21 @@ function Navbar() {
                 </a>
               </li>
             ))}
+            <li className="pl-4 border-l border-stone-800">
+              <a
+                href="https://portfolio-heisenberg.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-stone-600 hover:text-amber-500 font-mono text-[11px] tracking-widest uppercase transition-colors duration-300 group"
+                title="Classified Access"
+              >
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-40 group-hover:opacity-100"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-stone-700 group-hover:bg-amber-500 transition-colors"></span>
+                </span>
+                <span>[ lab ]</span>
+              </a>
+            </li>
           </ul>
 
           {/* Hamburger button — mobile only */}
@@ -132,6 +147,28 @@ function Navbar() {
                     </a>
                   </motion.li>
                 ))}
+                
+                <motion.li
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: NAV_LINKS.length * 0.08 + 0.1, duration: 0.3 }}
+                  className="mt-6 pt-6 border-t border-stone-800/50"
+                >
+                  <a
+                    href="https://portfolio-heisenberg.vercel.app/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMenu}
+                    className="flex items-center justify-center gap-3 px-4 py-3 text-stone-500 hover:text-amber-400 bg-stone-900/40 border border-stone-800/50 hover:border-amber-500/30 rounded-xl transition-all duration-300 text-xs font-mono tracking-widest uppercase group"
+                  >
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-40 group-hover:opacity-100"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-stone-600 group-hover:bg-amber-500 transition-colors"></span>
+                    </span>
+                    Classified_Lab
+                  </a>
+                </motion.li>
+                
               </ul>
 
               {/* Panel footer */}
